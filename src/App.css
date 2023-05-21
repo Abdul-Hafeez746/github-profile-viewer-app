@@ -343,3 +343,14 @@
       padding: 8px 18px;
     }
   }
+
+  .no-user{
+    font-size: 40px;
+    color: rgb(133, 103, 103);
+    border: 1px white solid;
+    margin-top: 10px;
+  }
+
+  .toast-container {
+    margin-top: 250px;
+  }

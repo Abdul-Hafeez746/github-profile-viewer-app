@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import Card from '../Components/Card';
 import useAllProfile from '../Hooks/useAllProfile';
 const AllProfiles = () => {
@@ -9,7 +9,7 @@ const AllProfiles = () => {
       <h1 style={{fontSize:"50px",color:"white"}}>All Profiles</h1>
     
       <div className="products-container">
-        {users.map((user) => {
+        {users.map((user) => { 
           const userRepos = repos.find((repo) => repo[repo.length - 1].user == user.user);
           console.log(userRepos);
           return (

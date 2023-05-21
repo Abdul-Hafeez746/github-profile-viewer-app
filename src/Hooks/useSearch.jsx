@@ -9,6 +9,7 @@ export default function useSearch()
     const [flag, setFlag] = useState(false);
     const [allProfiles, setAllProfiles] = useState([]);
     const [allRepos,setAllRepos] = useState([]);
+    const [isLoading,setIsLoading] = useState(false);
   
     useEffect(() => {
       const storedProfiles = localStorage.getItem('allProfiles');
@@ -21,6 +22,7 @@ export default function useSearch()
           setAllRepos(JSON.parse(storedRepos));
       }
     }, []);
+  
   
     const inputHandler = (e) => {
       setUsername(e.target.value);
@@ -37,8 +39,16 @@ export default function useSearch()
       }
   
       try {
+        setIsLoading(true);
         let fetchedProfile = await fetch(`https://api.github.com/users/${username}`);
         fetchedProfile = await fetchedProfile.json();
+          
+          if(fetchedProfile.message){
+            console.log(fetchedProfile.message);
+            setIsLoading(false);
+            setProfile(fetchedProfile)
+            return;
+          }
           console.log("api");
         let updatedProfile = { ...fetchedProfile, user: username };
   
@@ -50,6 +60,9 @@ export default function useSearch()
         localStorage.setItem('allProfiles', JSON.stringify(updatedAllProfiles));
       } catch (e) {
         console.log(e);
+      }
+      finally {
+        setIsLoading(false);
       }
     };
   
@@ -104,7 +117,8 @@ export default function useSearch()
         profile,
         repos,
         flag,
-        username
+        username,
+        isLoading
     };
 
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Card = ({user,repos,username}) => {
   // console.log(user);
-  // console.log(repos);
+  console.log(repos.length);
   return (
  <>
   <div className='card'>
@@ -12,7 +12,7 @@ const Card = ({user,repos,username}) => {
     </div>
     <div className='content'>
       <div className='details'>
-        <h2>{user.login}<br/> <span>{user.bio?user.bio.slice(0,35) :"no bio "}...</span></h2>
+        <h2>{user.login}<br/> <span>{user.bio?user.bio.slice(0,30) :"no bio "}...</span></h2>
       <div className='data'>
         <h3>{repos.length-1}<br/> <span>Repos</span></h3>
         <h3>{user.followers}<br/> <span>Followers</span></h3>
