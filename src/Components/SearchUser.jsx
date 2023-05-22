@@ -16,7 +16,7 @@ const SearchUser = () => {
           Search
         </button>
       </div>
-      {isLoading ? <RotatingLines /> : (profile.message == "Not Found") ? <div className='no-user'>No Profile Found</div> : (profile.login && flag) && <Card user={profile} repos={repos} username={username} />}
+      {isLoading ? <RotatingLines /> : (profile.message === "Not Found") ? <div className='no-user'>No Profile Found</div> : (profile.login && flag) && <Card user={profile} repos={repos} username={username} />}
 
     </>
   );
