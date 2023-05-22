@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function useAllProfile()
 {
@@ -11,6 +11,7 @@ export default function useAllProfile()
         if (storedRepos) {
           setRepos(JSON.parse(storedRepos));
         }
+        //eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
     const [users, setUsers] = useState([]);
   const [repos, setRepos] = useState([]);

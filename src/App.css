@@ -344,6 +344,17 @@
     }
   }
 
+ .margin{
+    margin-top: 70px;
+  }
+
+  @media (max-width:600px) {
+    
+    .margin{
+      margin-top: 70px;
+    }    
+  } 
+
   .no-user{
     display: flex;
     font-size: 30px;
@@ -355,7 +366,7 @@
     width: 400px;
     box-sizing: border-box;
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 133px;
     border-radius: 20px;
   }
 
@@ -371,7 +382,7 @@
       width: 300px;
       box-sizing: border-box;
       padding-top: 10px;
-      padding-left: 80px;
+      padding-left: 104px;
       border-radius: 20px;
     }
       

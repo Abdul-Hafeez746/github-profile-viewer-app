@@ -10,10 +10,14 @@ const AllProfiles = () => {
     
       <div className="products-container">
         {users.map((user) => { 
-          const userRepos = repos.find((repo) => repo[repo.length - 1].user == user.user);
+          const userRepos = repos.find((repo) => repo[repo.length - 1].user === user.user);
           console.log(userRepos);
           return (
+            <div className='margin'>
+
             <Card  user={user} repos={userRepos} username={user.user} />
+            
+            </div>
           );
         })}
       </div>

@@ -36,11 +36,11 @@ const Footer = () => {
       <strong>GitHub Profile Viewer App</strong>
     </p>
     <div className="footer-icons">
-      <a href="#"><i className="fab fa-facebook" /></a>
-      <a href="#"><i className="fab fa-instagram" /></a>
-      <a href="#"><i className="fab fa-linkedin" /></a>
-      <a href="#"><i className="fab fa-twitter" /></a>
-      <a href="#"><i className="fab fa-youtube" /></a>
+      <button><i className="fab fa-facebook" /></button>
+      <button><i className="fab fa-instagram" /></button>
+      <button><i className="fab fa-linkedin" /></button>
+      <button><i className="fab fa-twitter" /></button>
+      <button><i className="fab fa-youtube" /></button>
     </div>
   </div>
 </footer>
