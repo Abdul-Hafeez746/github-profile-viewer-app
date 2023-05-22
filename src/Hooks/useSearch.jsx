@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function useSearch()
 {
@@ -74,7 +74,7 @@ export default function useSearch()
           
   
           const repoFilter = allRepos.find((repo)=>{
-              return repo[repo.length-1].user == username
+              return repo[repo.length-1].user === username
           })
   
           if(repoFilter)
