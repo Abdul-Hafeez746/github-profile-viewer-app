@@ -13,7 +13,11 @@ const AllProfiles = () => {
           const userRepos = repos.find((repo) => repo[repo.length - 1].user === user.user);
           console.log(userRepos);
           return (
+            <div className='margin'>
+
             <Card  user={user} repos={userRepos} username={user.user} />
+            
+            </div>
           );
         })}
       </div>
