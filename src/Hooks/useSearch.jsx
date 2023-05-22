@@ -21,6 +21,7 @@ export default function useSearch()
       {
           setAllRepos(JSON.parse(storedRepos));
       }
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
   
   
