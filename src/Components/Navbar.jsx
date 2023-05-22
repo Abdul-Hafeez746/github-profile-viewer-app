@@ -48,14 +48,13 @@ Home.onclick = () => {
 };
 
     searchBtn.onclick = () => {
-      // form.classList.add("active");
-      // searchBtn.classList.add("hide");
       cancelBtn.classList.add("show");
     };
   };
 
   useEffect(() => {
     actions();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
