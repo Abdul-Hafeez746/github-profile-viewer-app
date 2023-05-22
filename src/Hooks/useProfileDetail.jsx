@@ -32,6 +32,7 @@ export default function useProfileDetail() {
     if (storedFollowing) {
       setAllProfilesFollowing(JSON.parse(storedFollowing));
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const repo = repos.find((repo) => repo[repo.length - 1].user === username);
