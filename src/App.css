@@ -44,7 +44,7 @@
       border-radius: 10px;
       box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
       /* background: #fff; */
-    background-color:#33383b ;
+      background: #2d2a30;
 
       overflow: hidden;
   }
@@ -267,7 +267,7 @@
                   position: relative;
                   overflow: auto;
                   padding: 1rem;
-                  background: #F5F5F5;
+                  background: #33383b;
                   height: 150px;
                   margin: .5rem 1rem;
                   border-radius: 10px;
@@ -345,12 +345,34 @@
   }
 
   .no-user{
-    font-size: 40px;
+    display: flex;
+    font-size: 30px;
     color: rgb(133, 103, 103);
     border: 1px white solid;
-    margin-top: 10px;
+    margin-top: 20px;
+    background: #2d2a30;
+    height:90px ;
+    width: 400px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 80px;
+    border-radius: 20px;
   }
 
-  .toast-container {
-    margin-top: 250px;
-  }
+  @media (max-width:780px) {
+    .no-user{
+      display: flex;
+      font-size: 20px;
+      color: rgb(133, 103, 103);
+      border: 1px white solid;
+      margin-top: 20px;
+      background: #2d2a30;
+      height:50px ;
+      width: 300px;
+      box-sizing: border-box;
+      padding-top: 10px;
+      padding-left: 80px;
+      border-radius: 20px;
+    }
+      
+    }

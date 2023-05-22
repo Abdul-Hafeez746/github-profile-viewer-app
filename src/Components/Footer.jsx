@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -7,13 +8,10 @@ const Footer = () => {
   <div className="footer-left">
     <h3>GitHub <span>Profile Viewer App</span></h3>
     <p className="footer-links">
-      <a href="#">Home</a>
+      <Link to={"/"}>Search Profile</Link>
       |
-      <a href="#">About</a>
-      |
-      <a href="#">Contact</a>
-      |
-      <a href="#">Blog</a>
+      <Link to={"/profiles"}>All Profiles</Link>
+      
     </p>
     <p className="footer-company-name">Copyright © 2021 <strong>GitHub</strong> All rights reserved</p>
   </div>
