@@ -58,18 +58,18 @@ const ProfileDetail = () => {
             <div className="row-followers">
               <div className="col">
                 <h3 className="heading">
-                  <button style={{width:"150px",height:"50px",borderRadius:"10px",fontSize:"15px",backgroundColor:"#779cda",color:"white"}} onClick={getFollowers}>Followers</button>
+                  <button className="btn-style" onClick={getFollowers}>Followers</button>
                 </h3>
               </div>
               <div className="col">
                 <h3 className="heading">
                   
-                  <button style={{width:"150px",height:"50px",borderRadius:"10px",fontSize:"15px",backgroundColor:"#779cda",color:"white"}} onClick={getFollowing}>Following</button>
+                  <button className="btn-style" onClick={getFollowing}>Following</button>
                 </h3>
               </div>
               <div className="col">
                 <h3 className="heading">
-                  <button style={{width:"150px",height:"50px",borderRadius:"10px",fontSize:"15px",backgroundColor:"#779cda",color:"white"}} onClick={() => setShow('repo')}>Repos</button>
+                  <button className="btn-style" onClick={() => setShow('repo')}>Repos</button>
                 </h3>
               </div>
             </div>
